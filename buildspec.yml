@@ -13,8 +13,8 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t my_python_ecr:2.0 .
-      - docker tag my_python_ecr:latest 038269871983.dkr.ecr.us-east-2.amazonaws.com/my_python_ecr:latest
+      - docker build -t my_python_ecr .
+      - docker tag my_python_ecr:latest 038269871983.dkr.ecr.us-east-2.amazonaws.com/my_python_ecr:2.0
   post_build:
     commands:
       - echo Build completed on `date`
